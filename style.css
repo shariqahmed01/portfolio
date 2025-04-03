@@ -578,7 +578,6 @@ header {
 .card-front,
 .card-back {
   position: absolute;
-  width: 100%;
   height: 100%;
   backface-visibility: hidden;
   border: 4px solid #333;
@@ -759,12 +758,10 @@ header {
   font-weight: bold;
 }
 
-
 /* === MOBILE OPTIMIZATION === */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 10px 20px;
     text-align: center;
   }
 
@@ -773,6 +770,10 @@ header {
     flex-direction: column;
     gap: 10px;
     margin-top: 1rem;
+  }
+
+  .nav-right a {
+    margin-left: 0px;
   }
 
   .home-content {
@@ -789,6 +790,11 @@ header {
 
   .retro-title pre {
     font-size: 10px;
+  }
+
+  .arcade-text pre {
+    font-size: 10%;
+    margin-top: 35%;
   }
 
   .subtitle {
@@ -836,7 +842,6 @@ header {
   }
 
   .flat-icons {
-    flex-direction: column;
     gap: 1.5rem;
   }
 
